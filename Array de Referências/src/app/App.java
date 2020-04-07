@@ -27,7 +27,7 @@ public class App {
 
         ContaCorrente cc1 = new ContaCorrente(2000);
         contas[0] = cc1;
-        ContaCorrente cc2 = new ContaCorrente(1000);
+        ContaCorrente cc2 = new ContaCorrente();
         contas[1] = cc2;
         ContaCorrente cc3 = new ContaCorrente(5000);
         contas[2] = cc3;

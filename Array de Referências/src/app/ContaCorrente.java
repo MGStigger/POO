@@ -7,6 +7,10 @@ public class ContaCorrente {
         this.saldo = valor;
     }
 
+    public ContaCorrente() {
+        this.saldo = 0;
+    }
+
     public double getSaldo() {
         return this.saldo;
     }
