@@ -1,0 +1,8 @@
+# Especificando arquivos não rastreados intencionalmente para ignorar.
+
+.settings
+.classpath
+.project
+
+/bin/*
+
