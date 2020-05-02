@@ -1,3 +1,5 @@
+/* Autor: MATHEUS GONÇALVES STIGGER */
+
 package app;
 
 public class PessoaFisica extends Pessoa{
@@ -14,7 +16,7 @@ public class PessoaFisica extends Pessoa{
     }
 
     public void setCPF(String cpf){
-        this.cpf = "XXXXXXXXXXX";
+        this.cpf = cpf;
     }
 
     public String toString(){

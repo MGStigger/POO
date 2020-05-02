@@ -1,3 +1,5 @@
+/* Autor: MATHEUS GONÇALVES STIGGER */
+
 package app;
 
 public class Pessoa {
@@ -13,7 +15,7 @@ public class Pessoa {
     }
 
     public void setNOME(String nome){
-        this.nome = "MGStigger";
+        this.nome = nome;
     }
 
     public String toString(){
