@@ -1,5 +1,8 @@
 /* Autor: MATHEUS GONÇALVES STIGGER */
 
+/* ----------------------------------- LISTA 02 ----------------------------------- */
+/* --------------------------------- EXERCÍCIO 01 --------------------------------- */
+
 package app;
 
 public class PessoaFisica extends Pessoa{
