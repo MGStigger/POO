@@ -8,7 +8,8 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        /* --------------------------------- EXERCÍCIO 01 --------------------------------- */
+        /* ----------------------------------- LISTA 01 ----------------------------------- */
+        /* --------------------------------- EXERCÍCIO 02 --------------------------------- */
 
         /*String nome;
         
@@ -23,6 +24,7 @@ public class App {
         //nova_Pessoa.setNOME(nome);
         System.out.println(nova_Pessoa.toString());*/
 
+        /* ----------------------------------- LISTA 02 ----------------------------------- */
         /* --------------------------------- EXERCÍCIO 02 --------------------------------- */
 
         /*String nome;
@@ -38,7 +40,8 @@ public class App {
         nova_PessoaFisica.getNOME();
         nova_PessoaFisica.getCPF();*/
 
-
+        /* ----------------------------------- LISTA 02 ----------------------------------- */
+        /* --------------------------------- EXERCÍCIO 03 --------------------------------- */
         
         /*String nome;
         String cpf;
