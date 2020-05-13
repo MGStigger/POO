@@ -18,5 +18,18 @@ public class App {
         uno.marchaRe();
 
         System.out.println("Hello Java");
+
+
+
+        /*  ------------ Exemplo de Polimorfismo ------------ */
+        /*
+
+        Moto moto = new Moto();
+
+        Pessoa marcos = new Pessoa("Marcos");
+        marcos.locomover(moto);
+
+        */
+
     }
 }
