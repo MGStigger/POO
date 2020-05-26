@@ -1,0 +1,3 @@
+# Especificando arquivos não rastreados intencionalmente para ignorar.
+
+/lib/*
