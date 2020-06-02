@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -14,6 +15,8 @@ public class App {
         while(true) {
 
             System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
             System.out.println("********************************** AGENDA ***********************************");
             System.out.println("0 – Sair     1 – Cadastrar     2 – Remover     3 – Imprimir Lista de Contatos");
             System.out.println(" ");
@@ -23,16 +26,20 @@ public class App {
 
             switch(opcao){
 
+                case 0:
+                    System.exit(0);
+                    break;
+
                 case 1:
                     obj.cadastrar();
                     break;
 
-                case 5:
-                    obj.imprimir();
+                case 2:
+                    obj.remover();
                     break;
 
-                case 0:
-                    System.exit(0);
+                case 3:
+                    obj.imprimir();
                     break;
 
                 default:
@@ -41,16 +48,42 @@ public class App {
         }
     }
 
+    ArrayList<Pessoa> Contatos = new ArrayList<Pessoa>();
+
     private void imprimir(){
 
-        if(this.pessoa == null){
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+
+        if(Contatos == null){
             System.out.println("Nenhuma pessoa foi cadastrada.");
         }
         else{
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println(this.pessoa.toString());
+            Contatos.forEach((lista) -> System.out.println(lista.toString()));
+        }
+
+    }
+
+    private void remover(){
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("***************** AGENDA *****************");
+        System.out.print("Digite o nome: ");
+
+        String nome = sc.next();
+
+        for(Pessoa excluir : Contatos) {
+
+            if(excluir.getNOME().equals(nome)){
+                Contatos.remove(excluir);
+                break;
+            }
+
         }
 
     }
@@ -75,7 +108,7 @@ public class App {
         System.out.println(" ");
         System.out.print("Entre com uma opção: ");
 
-        opcao = sc.nextInt();
+        opcao = sc.nextInt();        
 
         switch(opcao){
 
@@ -92,10 +125,8 @@ public class App {
                 email = sc.next();
                 System.out.print("Digite o CPF: ");
                 cpf = sc.next();
-                System.out.println(" ");
-                System.out.println(" ");
-                System.out.println(" ");
-                this.pessoa = new PessoaFisica(nome, telefone, email, cpf);
+                Pessoa pessoafisica = new PessoaFisica(nome, telefone, email, cpf);
+                Contatos.add(pessoafisica);
                 break;
 
             case 2:
@@ -111,10 +142,8 @@ public class App {
                 email = sc.next();
                 System.out.print("Digite o CNPJ: ");
                 cnpj = sc.next();
-                System.out.println(" ");
-                System.out.println(" ");
-                System.out.println(" ");
-                this.pessoa = new PessoaJuridica(nome, telefone, email, cnpj);
+                Pessoa pessoajuridica = new PessoaJuridica(nome, telefone, email, cnpj);
+                Contatos.add(pessoajuridica);
                 break;
 
             default:
