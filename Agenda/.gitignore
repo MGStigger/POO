@@ -1,3 +1,4 @@
 # Especificando arquivos não rastreados intencionalmente para ignorar.
 
+/src/*
 /lib/*

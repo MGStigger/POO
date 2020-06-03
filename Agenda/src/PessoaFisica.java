@@ -7,10 +7,12 @@ public class PessoaFisica extends Pessoa {
         this.cpf = cpf;
     }
 
+    @Override
     public String getCPF(){
         return this.cpf;
     }
 
+    @Override
     public void setCPF(String cpf){
         this.cpf = cpf;
     }

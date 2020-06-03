@@ -22,6 +22,9 @@ public abstract class Pessoa {
         return this.email;
     }
 
+    public String getCPF(){return null;};
+    public String getCNPJ(){return null;};
+
     public void setNOME(String nome){
         this.nome = nome;
     }
@@ -33,6 +36,9 @@ public abstract class Pessoa {
     public void setEMAIL(String email){
         this.email = email;
     }
+
+    public void setCPF(String cpf){};
+    public void setCNPJ(String cnpj){};
 
     public String toString(){
         return  "Nome: " + this.nome +
